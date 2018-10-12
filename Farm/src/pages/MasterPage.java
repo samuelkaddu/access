@@ -49,24 +49,24 @@ public class MasterPage extends WebPage {
 	}
 
 	private void setupLinks() {
-		replacedPanel = new Dashboard("panel");
-		replacedPanel.setOutputMarkupId(true);
+//		replacedPanel = new Dashboard("panel");
+//		replacedPanel.setOutputMarkupId(true);
 		// UserRole role = (UserRole) getSession().getAttribute("user_role");
 
-		add(replacedPanel);
-		add(new Label("login_id", user));
-		add(new AjaxFallbackLink<MasterPage>("dashboard") {
-			@Override
-			public void onClick(AjaxRequestTarget target) {
-				Panel newPanel = new Dashboard("panel");
-				newPanel.setOutputMarkupId(true);
-				replacedPanel.replaceWith(newPanel);
-				if (target != null) {
-					target.add(newPanel);
-				}
-				replacedPanel = newPanel;
-			}
-		});
+		//add(replacedPanel);
+		//add(new Label("login_id", user));
+//		add(new AjaxFallbackLink<MasterPage>("dashboard") {
+//			@Override
+//			public void onClick(AjaxRequestTarget target) {
+//				Panel newPanel = new Dashboard("panel");
+//				newPanel.setOutputMarkupId(true);
+//				replacedPanel.replaceWith(newPanel);
+//				if (target != null) {
+//					target.add(newPanel);
+//				}
+//				replacedPanel = newPanel;
+//			}
+//		});
 
 	}
 

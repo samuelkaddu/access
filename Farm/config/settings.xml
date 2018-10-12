@@ -4,9 +4,8 @@
 	<comment>Configuration Updated</comment>
 	<entry key="app_schema">jdbc:oracle:thin:@//localhost:1521/pdbtest</entry>
 	<entry key="schema_user">FARM</entry>
-	<entry key="core_schema">testing</entry>
 	<entry key="endpoint_port">8009</entry>
-	<entry key="schema_paswd">w9zBViiZQx8=</entry>
+	<entry key="schema_paswd">T2eTrxDzMwA=</entry>
 </properties>
 
 

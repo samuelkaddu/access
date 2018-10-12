@@ -20,7 +20,12 @@ public class XAPIUtils {
 			(byte) 0x10, (byte) 0x12, };
 
 	public static void main(String[] args) {
-
+		try {
+			System.out.println(encrypt("FARM"));
+		} catch (UnsupportedEncodingException | GeneralSecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public static String encrypt(String property) throws GeneralSecurityException, UnsupportedEncodingException {

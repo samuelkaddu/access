@@ -1,5 +1,7 @@
 package com.neptunesoftwaregroup.main;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 import javax.xml.ws.Endpoint;
@@ -59,11 +61,19 @@ public class MainClass {
 	}
 
 	private static void readConfigToProps() {
-		ENDPOINT_PORT = Integer.parseInt(props.getProperty("endpoint_port", "8009"));
-		XAPISettings.dsn = props.getProperty("app_schema");
-		XAPISettings.user = props.getProperty("schema_user");
-		XAPISettings.pswd = XAPIUtils.decrypt(props.getProperty("schema_paswd"));
-		jdbi = new DBI(XAPISettings.dsn, XAPISettings.user, XAPISettings.pswd);
+		try {
+			props.loadFromXML(new FileInputStream("config/settings.xml"));
+
+			ENDPOINT_PORT = Integer.parseInt(props.getProperty("endpoint_port", "8009"));
+			XAPISettings.dsn = props.getProperty("app_schema");
+			XAPISettings.user = props.getProperty("schema_user");
+			XAPISettings.pswd = XAPIUtils.decrypt(props.getProperty("schema_paswd"));
+			jdbi = new DBI(XAPISettings.dsn, XAPISettings.user, XAPISettings.pswd);
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private static int ENDPOINT_PORT;

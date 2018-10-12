@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Configuration Updated</comment>
+	<entry key="app_schema">jdbc:oracle:thin:@//localhost:1521/pdbtest</entry>
+	<entry key="schema_user">FARM</entry>
+	<entry key="core_schema">testing</entry>
+	<entry key="endpoint_port">8009</entry>
+	<entry key="schema_paswd">w9zBViiZQx8=</entry>
+</properties>
+
+
+
+
+

@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/commons-dbutils-1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/commons-fileupload-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/cron4j-2.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/highcharts-wrapper-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/htmlcompressor-1.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jackson-all-1.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jackson-annotations-2.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jackson-core-2.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jackson-databind-2.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jdbi-2.70.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jetty-http-9.4.7.v20170914.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jetty-io-9.4.7.v20170914.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jetty-security-9.4.7.v20170914.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jetty-server-9.4.7.v20170914.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jetty-servlet-9.4.7.v20170914.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jetty-util-9.4.7.v20170914.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jetty-webapp-9.4.8.v20171121.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jetty-xml-9.4.8.v20171121.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/jsoup-1.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/loglite.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/poi-3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/poi-contrib-3.5-final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/quartz-2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/quartz-jobs-2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/rubikon305.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/servlet-api-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/slf4j-simple-1.7.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/wicked-charts-wicket7-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/wicket-auth-roles-7.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/wicket-core-7.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/wicket-extensions-7.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/wicket-request-7.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/wicketstuff-htmlcompressor-1.5.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/samue/eclipse-workspace/Farm/lib/wicket-util-7.9.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

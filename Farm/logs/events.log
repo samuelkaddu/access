@@ -74,3 +74,79 @@
           </stacktrace>
      </error>
 </log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="ug.ac.mak.java.logger.DailyLogListener">
+<log realm="venus" at="Fri Oct 12 19:30:08 EAT 2018.974">
+     <SystemMonitor>
+          <memory>
+               <free>479088 kb</free>
+               <total>502784 kb</total>
+               <used>23695 kb</used>
+          </memory>
+          <threads>
+               <delay>0 ms</delay>
+               <count>3</count>
+                        Thread[Reference Handler,10,system]
+                        Thread[Finalizer,8,system]
+                        Thread[Signal Dispatcher,9,system]
+                        Thread[Attach Listener,5,system]
+                        Thread[main,5,main]
+                        Thread[Timer-0,5,main]
+                        Thread[SystemMonitor,1,main]
+          </threads>
+          <registrar>
+          </registrar>
+     </SystemMonitor>
+</log>
+<log realm="venus" at="Fri Oct 12 19:30:08 EAT 2018.979" lifespan="5 ms">
+     <error>
+          <class>NullPointerException</class>
+          <message>null</message>
+          <stacktrace>
+               at sun.misc.CharacterDecoder.decodeBuffer(Unknown Source)
+               at utilities.XAPIUtils.base64Decode(XAPIUtils.java:57)
+               at utilities.XAPIUtils.decrypt(XAPIUtils.java:48)
+               at com.neptunesoftwaregroup.main.MainClass.readConfigToProps(MainClass.java:65)
+               at com.neptunesoftwaregroup.main.MainClass.configure(MainClass.java:58)
+               at com.neptunesoftwaregroup.main.MainClass.main(MainClass.java:30)
+          </stacktrace>
+     </error>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="ug.ac.mak.java.logger.DailyLogListener">
+<log realm="venus" at="Fri Oct 12 19:36:32 EAT 2018.80">
+     <SystemMonitor>
+          <memory>
+               <free>479074 kb</free>
+               <total>502784 kb</total>
+               <used>23709 kb</used>
+          </memory>
+          <threads>
+               <delay>0 ms</delay>
+               <count>3</count>
+                        Thread[Reference Handler,10,system]
+                        Thread[Finalizer,8,system]
+                        Thread[Signal Dispatcher,9,system]
+                        Thread[Attach Listener,5,system]
+                        Thread[main,5,main]
+                        Thread[Timer-0,5,main]
+                        Thread[SystemMonitor,1,main]
+          </threads>
+          <registrar>
+          </registrar>
+     </SystemMonitor>
+</log>
+<log realm="venus" at="Fri Oct 12 19:36:32 EAT 2018.85" lifespan="5 ms">
+     <error>
+          <class>NullPointerException</class>
+          <message>null</message>
+          <stacktrace>
+               at sun.misc.CharacterDecoder.decodeBuffer(Unknown Source)
+               at utilities.XAPIUtils.base64Decode(XAPIUtils.java:57)
+               at utilities.XAPIUtils.decrypt(XAPIUtils.java:48)
+               at com.neptunesoftwaregroup.main.MainClass.readConfigToProps(MainClass.java:65)
+               at com.neptunesoftwaregroup.main.MainClass.configure(MainClass.java:58)
+               at com.neptunesoftwaregroup.main.MainClass.main(MainClass.java:30)
+          </stacktrace>
+     </error>
+</log>

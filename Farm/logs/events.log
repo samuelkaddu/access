@@ -150,3 +150,520 @@
           </stacktrace>
      </error>
 </log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="ug.ac.mak.java.logger.DailyLogListener">
+<log realm="venus" at="Sat Oct 13 12:07:21 EAT 2018.166" lifespan="1 ms">
+     <error>
+          <class>UnableToObtainConnectionException</class>
+          <message>java.sql.SQLRecoverableException: IO Error: Invalid number format for port number</message>
+          <stacktrace>
+               at org.skife.jdbi.v2.DBI.open(DBI.java:229)
+               at utilities.UserDao.isAuthenticated(UserDao.java:14)
+               at com.neptunesoftwaregroup.application.WebSession.authenticate(WebSession.java:20)
+               at org.apache.wicket.authroles.authentication.AuthenticatedWebSession.signIn(AuthenticatedWebSession.java:66)
+               at pages.LoginPage$1.onSubmit(LoginPage.java:34)
+               at org.apache.wicket.markup.html.form.Form.delegateSubmit(Form.java:1316)
+               at org.apache.wicket.markup.html.form.Form.process(Form.java:976)
+               at org.apache.wicket.markup.html.form.StatelessForm.process(StatelessForm.java:100)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:797)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:708)
+               at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+               at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+               at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+               at java.lang.reflect.Method.invoke(Unknown Source)
+               at org.apache.wicket.RequestListenerInterface.internalInvoke(RequestListenerInterface.java:258)
+               at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:216)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.invokeListener(ListenerInterfaceRequestHandler.java:241)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.respond(ListenerInterfaceRequestHandler.java:234)
+               at org.apache.wicket.request.cycle.RequestCycle$HandlerExecutor.respond(RequestCycle.java:895)
+               at org.apache.wicket.request.RequestHandlerStack.execute(RequestHandlerStack.java:64)
+               at org.apache.wicket.request.cycle.RequestCycle.execute(RequestCycle.java:265)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequest(RequestCycle.java:222)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequestAndDetach(RequestCycle.java:293)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequestCycle(WicketFilter.java:261)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequest(WicketFilter.java:203)
+               at org.apache.wicket.protocol.http.WicketServlet.doPost(WicketServlet.java:159)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+               at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+               at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+               at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+               at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+               at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+               at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+               at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+               at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.Server.handle(Server.java:561)
+               at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:334)
+               at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+               at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+               at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:104)
+               at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+               at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:243)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:679)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:597)
+               at java.lang.Thread.run(Unknown Source)
+          </stacktrace>
+     </error>
+</log>
+<log realm="venus" at="Sat Oct 13 12:07:21 EAT 2018.376" lifespan="211 ms">
+     <SystemMonitor>
+          <memory>
+               <free>275340 kb</free>
+               <total>292864 kb</total>
+               <used>17523 kb</used>
+          </memory>
+          <threads>
+               <delay>0 ms</delay>
+               <count>17</count>
+                        Thread[Reference Handler,10,system]
+                        Thread[Finalizer,8,system]
+                        Thread[Signal Dispatcher,9,system]
+                        Thread[Attach Listener,5,system]
+                        Thread[main,5,main]
+                        Thread[qtp1316557528-14,5,main]
+                        Thread[qtp1316557528-15,5,main]
+                        Thread[qtp1316557528-16,5,main]
+                        Thread[qtp1316557528-17,5,main]
+                        Thread[qtp1316557528-18,5,main]
+                        Thread[qtp1316557528-19,5,main]
+                        Thread[qtp1316557528-20-acceptor-0@40186457-ServerConnector@35390ee3{HTTP/1.1,[http/1.1]}{0.0.0.0:8009},3,main]
+                        Thread[qtp1316557528-21,5,main]
+                        Thread[Scheduler-2103569237,5,main]
+                        Thread[Scheduler-1473771722,5,main]
+                        Thread[Wicket-PageSavingThread,5,main]
+                        Thread[ModificationWatcher Task,5,main]
+                        Thread[qtp1316557528-26,5,main]
+                        Thread[qtp1316557528-28,5,main]
+                        Thread[Timer-0,5,main]
+                        Thread[SystemMonitor,1,main]
+          </threads>
+          <registrar>
+          </registrar>
+     </SystemMonitor>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="ug.ac.mak.java.logger.DailyLogListener">
+<log realm="venus" at="Sat Oct 13 12:12:14 EAT 2018.908" lifespan="1 ms">
+     <SystemMonitor>
+          <memory>
+               <free>276630 kb</free>
+               <total>292864 kb</total>
+               <used>16233 kb</used>
+          </memory>
+          <threads>
+               <delay>0 ms</delay>
+               <count>17</count>
+                        Thread[Reference Handler,10,system]
+                        Thread[Finalizer,8,system]
+                        Thread[Signal Dispatcher,9,system]
+                        Thread[Attach Listener,5,system]
+                        Thread[main,5,main]
+                        Thread[qtp1402433372-14,5,main]
+                        Thread[qtp1402433372-15,5,main]
+                        Thread[qtp1402433372-16,5,main]
+                        Thread[qtp1402433372-17-acceptor-0@16daf0e1-ServerConnector@5e01a982{HTTP/1.1,[http/1.1]}{0.0.0.0:8009},3,main]
+                        Thread[qtp1402433372-18,5,main]
+                        Thread[qtp1402433372-19,5,main]
+                        Thread[qtp1402433372-20,5,main]
+                        Thread[qtp1402433372-21,5,main]
+                        Thread[Scheduler-573200870,5,main]
+                        Thread[Scheduler-1992550266,5,main]
+                        Thread[Wicket-PageSavingThread,5,main]
+                        Thread[ModificationWatcher Task,5,main]
+                        Thread[qtp1402433372-26,5,main]
+                        Thread[qtp1402433372-28,5,main]
+                        Thread[Timer-0,5,main]
+                        Thread[SystemMonitor,1,main]
+          </threads>
+          <registrar>
+          </registrar>
+     </SystemMonitor>
+</log>
+<log realm="venus" at="Sat Oct 13 12:12:14 EAT 2018.915" lifespan="1 ms">
+     <error>
+          <class>UnableToObtainConnectionException</class>
+          <message>java.sql.SQLRecoverableException: IO Error: Invalid number format for port number</message>
+          <stacktrace>
+               at org.skife.jdbi.v2.DBI.open(DBI.java:229)
+               at utilities.UserDao.isAuthenticated(UserDao.java:14)
+               at com.neptunesoftwaregroup.application.WebSession.authenticate(WebSession.java:20)
+               at org.apache.wicket.authroles.authentication.AuthenticatedWebSession.signIn(AuthenticatedWebSession.java:66)
+               at pages.LoginPage$1.onSubmit(LoginPage.java:34)
+               at org.apache.wicket.markup.html.form.Form.delegateSubmit(Form.java:1316)
+               at org.apache.wicket.markup.html.form.Form.process(Form.java:976)
+               at org.apache.wicket.markup.html.form.StatelessForm.process(StatelessForm.java:100)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:797)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:708)
+               at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+               at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+               at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+               at java.lang.reflect.Method.invoke(Unknown Source)
+               at org.apache.wicket.RequestListenerInterface.internalInvoke(RequestListenerInterface.java:258)
+               at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:216)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.invokeListener(ListenerInterfaceRequestHandler.java:241)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.respond(ListenerInterfaceRequestHandler.java:234)
+               at org.apache.wicket.request.cycle.RequestCycle$HandlerExecutor.respond(RequestCycle.java:895)
+               at org.apache.wicket.request.RequestHandlerStack.execute(RequestHandlerStack.java:64)
+               at org.apache.wicket.request.cycle.RequestCycle.execute(RequestCycle.java:265)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequest(RequestCycle.java:222)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequestAndDetach(RequestCycle.java:293)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequestCycle(WicketFilter.java:261)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequest(WicketFilter.java:203)
+               at org.apache.wicket.protocol.http.WicketServlet.doPost(WicketServlet.java:159)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+               at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+               at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+               at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+               at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+               at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+               at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+               at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+               at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.Server.handle(Server.java:561)
+               at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:334)
+               at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+               at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+               at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:104)
+               at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+               at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:243)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:679)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:597)
+               at java.lang.Thread.run(Unknown Source)
+          </stacktrace>
+     </error>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="ug.ac.mak.java.logger.DailyLogListener">
+<log realm="venus" at="Sat Oct 13 12:15:46 EAT 2018.165">
+     <error>
+          <class>UnableToObtainConnectionException</class>
+          <message>java.sql.SQLRecoverableException: IO Error: Invalid number format for port number</message>
+          <stacktrace>
+               at org.skife.jdbi.v2.DBI.open(DBI.java:229)
+               at utilities.UserDao.isAuthenticated(UserDao.java:14)
+               at com.neptunesoftwaregroup.application.WebSession.authenticate(WebSession.java:20)
+               at org.apache.wicket.authroles.authentication.AuthenticatedWebSession.signIn(AuthenticatedWebSession.java:66)
+               at pages.LoginPage$1.onSubmit(LoginPage.java:34)
+               at org.apache.wicket.markup.html.form.Form.delegateSubmit(Form.java:1316)
+               at org.apache.wicket.markup.html.form.Form.process(Form.java:976)
+               at org.apache.wicket.markup.html.form.StatelessForm.process(StatelessForm.java:100)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:797)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:708)
+               at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+               at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+               at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+               at java.lang.reflect.Method.invoke(Unknown Source)
+               at org.apache.wicket.RequestListenerInterface.internalInvoke(RequestListenerInterface.java:258)
+               at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:216)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.invokeListener(ListenerInterfaceRequestHandler.java:241)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.respond(ListenerInterfaceRequestHandler.java:234)
+               at org.apache.wicket.request.cycle.RequestCycle$HandlerExecutor.respond(RequestCycle.java:895)
+               at org.apache.wicket.request.RequestHandlerStack.execute(RequestHandlerStack.java:64)
+               at org.apache.wicket.request.cycle.RequestCycle.execute(RequestCycle.java:265)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequest(RequestCycle.java:222)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequestAndDetach(RequestCycle.java:293)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequestCycle(WicketFilter.java:261)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequest(WicketFilter.java:203)
+               at org.apache.wicket.protocol.http.WicketServlet.doPost(WicketServlet.java:159)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+               at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+               at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+               at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+               at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+               at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+               at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+               at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+               at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.Server.handle(Server.java:561)
+               at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:334)
+               at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+               at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+               at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:104)
+               at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+               at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:243)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:679)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:597)
+               at java.lang.Thread.run(Unknown Source)
+          </stacktrace>
+     </error>
+</log>
+<log realm="venus" at="Sat Oct 13 12:15:46 EAT 2018.174" lifespan="9 ms">
+     <SystemMonitor>
+          <memory>
+               <free>280477 kb</free>
+               <total>298496 kb</total>
+               <used>18018 kb</used>
+          </memory>
+          <threads>
+               <delay>0 ms</delay>
+               <count>17</count>
+                        Thread[Reference Handler,10,system]
+                        Thread[Finalizer,8,system]
+                        Thread[Signal Dispatcher,9,system]
+                        Thread[Attach Listener,5,system]
+                        Thread[main,5,main]
+                        Thread[qtp213193302-11,5,main]
+                        Thread[qtp213193302-12,5,main]
+                        Thread[qtp213193302-13,5,main]
+                        Thread[qtp213193302-14,5,main]
+                        Thread[qtp213193302-15,5,main]
+                        Thread[qtp213193302-16,5,main]
+                        Thread[qtp213193302-17-acceptor-0@394cfdfa-ServerConnector@747edf66{HTTP/1.1,[http/1.1]}{0.0.0.0:8009},3,main]
+                        Thread[qtp213193302-18,5,main]
+                        Thread[Scheduler-750468423,5,main]
+                        Thread[Scheduler-712025048,5,main]
+                        Thread[Wicket-PageSavingThread,5,main]
+                        Thread[ModificationWatcher Task,5,main]
+                        Thread[qtp213193302-24,5,main]
+                        Thread[qtp213193302-25,5,main]
+                        Thread[Timer-0,5,main]
+                        Thread[SystemMonitor,1,main]
+          </threads>
+          <registrar>
+          </registrar>
+     </SystemMonitor>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="ug.ac.mak.java.logger.DailyLogListener">
+<log realm="venus" at="Sat Oct 13 12:17:15 EAT 2018.376">
+     <error>
+          <class>UnableToExecuteStatementException</class>
+          <message>java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+ [statement:"SELECT login_id FROM SYS_USER where   username=:LOGIN_ID and passwd=:PASSWD", located:"SELECT login_id FROM SYS_USER where   username=:LOGIN_ID and passwd=:PASSWD", rewritten:"SELECT login_id FROM SYS_USER where   username=? and passwd=?", arguments:{ positional:{}, named:{PASSWD:'+ZKc5wQI0ZA=',LOGIN_ID:'SAMUEL'}, finder:[]}]</message>
+          <stacktrace>
+               at org.skife.jdbi.v2.SQLStatement.internalExecute(SQLStatement.java:1337)
+               at org.skife.jdbi.v2.Query.fold(Query.java:173)
+               at org.skife.jdbi.v2.Query.first(Query.java:273)
+               at org.skife.jdbi.v2.Query.first(Query.java:264)
+               at utilities.UserDao.isAuthenticated(UserDao.java:18)
+               at com.neptunesoftwaregroup.application.WebSession.authenticate(WebSession.java:20)
+               at org.apache.wicket.authroles.authentication.AuthenticatedWebSession.signIn(AuthenticatedWebSession.java:66)
+               at pages.LoginPage$1.onSubmit(LoginPage.java:34)
+               at org.apache.wicket.markup.html.form.Form.delegateSubmit(Form.java:1316)
+               at org.apache.wicket.markup.html.form.Form.process(Form.java:976)
+               at org.apache.wicket.markup.html.form.StatelessForm.process(StatelessForm.java:100)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:797)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:708)
+               at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+               at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+               at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+               at java.lang.reflect.Method.invoke(Unknown Source)
+               at org.apache.wicket.RequestListenerInterface.internalInvoke(RequestListenerInterface.java:258)
+               at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:216)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.invokeListener(ListenerInterfaceRequestHandler.java:241)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.respond(ListenerInterfaceRequestHandler.java:234)
+               at org.apache.wicket.request.cycle.RequestCycle$HandlerExecutor.respond(RequestCycle.java:895)
+               at org.apache.wicket.request.RequestHandlerStack.execute(RequestHandlerStack.java:64)
+               at org.apache.wicket.request.cycle.RequestCycle.execute(RequestCycle.java:265)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequest(RequestCycle.java:222)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequestAndDetach(RequestCycle.java:293)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequestCycle(WicketFilter.java:261)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequest(WicketFilter.java:203)
+               at org.apache.wicket.protocol.http.WicketServlet.doPost(WicketServlet.java:159)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+               at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+               at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+               at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+               at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+               at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+               at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+               at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+               at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.Server.handle(Server.java:561)
+               at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:334)
+               at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+               at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+               at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:104)
+               at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:679)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:597)
+               at java.lang.Thread.run(Unknown Source)
+          </stacktrace>
+     </error>
+</log>
+<log realm="venus" at="Sat Oct 13 12:17:15 EAT 2018.382" lifespan="7 ms">
+     <SystemMonitor>
+          <memory>
+               <free>267535 kb</free>
+               <total>298496 kb</total>
+               <used>30960 kb</used>
+          </memory>
+          <threads>
+               <delay>0 ms</delay>
+               <count>15</count>
+                        Thread[Reference Handler,10,system]
+                        Thread[Finalizer,8,system]
+                        Thread[Signal Dispatcher,9,system]
+                        Thread[Attach Listener,5,system]
+                        Thread[main,5,main]
+                        Thread[qtp213193302-11,5,main]
+                        Thread[qtp213193302-12,5,main]
+                        Thread[qtp213193302-13,5,main]
+                        Thread[qtp213193302-14,5,main]
+                        Thread[qtp213193302-15,5,main]
+                        Thread[qtp213193302-16-acceptor-0@555b6065-ServerConnector@747edf66{HTTP/1.1,[http/1.1]}{0.0.0.0:8009},3,main]
+                        Thread[qtp213193302-17,5,main]
+                        Thread[qtp213193302-18,5,main]
+                        Thread[Scheduler-750468423,5,main]
+                        Thread[Scheduler-712025048,5,main]
+                        Thread[Wicket-PageSavingThread,5,main]
+                        Thread[ModificationWatcher Task,5,main]
+                        Thread[Timer-0,5,main]
+                        Thread[SystemMonitor,1,main]
+          </threads>
+          <registrar>
+          </registrar>
+     </SystemMonitor>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="ug.ac.mak.java.logger.DailyLogListener">
+<log realm="venus" at="Sat Oct 13 12:19:35 EAT 2018.543">
+     <error>
+          <class>UnableToExecuteStatementException</class>
+          <message>java.sql.SQLSyntaxErrorException: ORA-00904: "USERNAME": invalid identifier
+ [statement:"SELECT login_id FROM SYSUSER where   username=:LOGIN_ID and passwd=:PASSWD", located:"SELECT login_id FROM SYSUSER where   username=:LOGIN_ID and passwd=:PASSWD", rewritten:"SELECT login_id FROM SYSUSER where   username=? and passwd=?", arguments:{ positional:{}, named:{PASSWD:'8tTsHCtGfdPWbyOE0ouvUw==',LOGIN_ID:'SAMUEL'}, finder:[]}]</message>
+          <stacktrace>
+               at org.skife.jdbi.v2.SQLStatement.internalExecute(SQLStatement.java:1337)
+               at org.skife.jdbi.v2.Query.fold(Query.java:173)
+               at org.skife.jdbi.v2.Query.first(Query.java:273)
+               at org.skife.jdbi.v2.Query.first(Query.java:264)
+               at utilities.UserDao.isAuthenticated(UserDao.java:18)
+               at com.neptunesoftwaregroup.application.WebSession.authenticate(WebSession.java:20)
+               at org.apache.wicket.authroles.authentication.AuthenticatedWebSession.signIn(AuthenticatedWebSession.java:66)
+               at pages.LoginPage$1.onSubmit(LoginPage.java:34)
+               at org.apache.wicket.markup.html.form.Form.delegateSubmit(Form.java:1316)
+               at org.apache.wicket.markup.html.form.Form.process(Form.java:976)
+               at org.apache.wicket.markup.html.form.StatelessForm.process(StatelessForm.java:100)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:797)
+               at org.apache.wicket.markup.html.form.Form.onFormSubmitted(Form.java:708)
+               at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+               at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+               at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+               at java.lang.reflect.Method.invoke(Unknown Source)
+               at org.apache.wicket.RequestListenerInterface.internalInvoke(RequestListenerInterface.java:258)
+               at org.apache.wicket.RequestListenerInterface.invoke(RequestListenerInterface.java:216)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.invokeListener(ListenerInterfaceRequestHandler.java:241)
+               at org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler.respond(ListenerInterfaceRequestHandler.java:234)
+               at org.apache.wicket.request.cycle.RequestCycle$HandlerExecutor.respond(RequestCycle.java:895)
+               at org.apache.wicket.request.RequestHandlerStack.execute(RequestHandlerStack.java:64)
+               at org.apache.wicket.request.cycle.RequestCycle.execute(RequestCycle.java:265)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequest(RequestCycle.java:222)
+               at org.apache.wicket.request.cycle.RequestCycle.processRequestAndDetach(RequestCycle.java:293)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequestCycle(WicketFilter.java:261)
+               at org.apache.wicket.protocol.http.WicketFilter.processRequest(WicketFilter.java:203)
+               at org.apache.wicket.protocol.http.WicketServlet.doPost(WicketServlet.java:159)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+               at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+               at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+               at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+               at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+               at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+               at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+               at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+               at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+               at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+               at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+               at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+               at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+               at org.eclipse.jetty.server.Server.handle(Server.java:561)
+               at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:334)
+               at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+               at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+               at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:104)
+               at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+               at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+               at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:243)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:679)
+               at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:597)
+               at java.lang.Thread.run(Unknown Source)
+          </stacktrace>
+     </error>
+</log>
+<log realm="venus" at="Sat Oct 13 12:19:35 EAT 2018.549" lifespan="6 ms">
+     <SystemMonitor>
+          <memory>
+               <free>268081 kb</free>
+               <total>298496 kb</total>
+               <used>30414 kb</used>
+          </memory>
+          <threads>
+               <delay>0 ms</delay>
+               <count>17</count>
+                        Thread[Reference Handler,10,system]
+                        Thread[Finalizer,8,system]
+                        Thread[Signal Dispatcher,9,system]
+                        Thread[Attach Listener,5,system]
+                        Thread[main,5,main]
+                        Thread[qtp213193302-11,5,main]
+                        Thread[qtp213193302-12,5,main]
+                        Thread[qtp213193302-13,5,main]
+                        Thread[qtp213193302-14-acceptor-0@555b6065-ServerConnector@747edf66{HTTP/1.1,[http/1.1]}{0.0.0.0:8009},3,main]
+                        Thread[qtp213193302-15,5,main]
+                        Thread[qtp213193302-16,5,main]
+                        Thread[qtp213193302-17,5,main]
+                        Thread[qtp213193302-18,5,main]
+                        Thread[Scheduler-750468423,5,main]
+                        Thread[Scheduler-712025048,5,main]
+                        Thread[Wicket-PageSavingThread,5,main]
+                        Thread[ModificationWatcher Task,5,main]
+                        Thread[qtp213193302-23,5,main]
+                        Thread[qtp213193302-25,5,main]
+                        Thread[Timer-0,5,main]
+                        Thread[SystemMonitor,1,main]
+          </threads>
+          <registrar>
+          </registrar>
+     </SystemMonitor>
+</log>

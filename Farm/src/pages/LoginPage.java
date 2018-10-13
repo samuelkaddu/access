@@ -42,6 +42,7 @@ public class LoginPage extends WebPage {
 					feedback.error(getSession().getAttribute("state"));
 				}
 			}
+
 		};
 		add(form);
 

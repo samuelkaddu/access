@@ -21,7 +21,7 @@ public class XAPIUtils {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println(encrypt("FARM"));
+			System.out.println(encrypt("samuel"));
 		} catch (UnsupportedEncodingException | GeneralSecurityException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -7,8 +7,12 @@ import org.apache.wicket.authroles.authentication.AuthenticatedWebSession;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.panel.Panel;
+import org.apache.wicket.model.Model;
+
+import com.neptunesoftwaregroup.serializable.Notification;
 
 import panels.Dashboard;
+import panels.Notifications;
 
 @SuppressWarnings("serial")
 public class MasterPage extends WebPage {
@@ -49,24 +53,44 @@ public class MasterPage extends WebPage {
 	}
 
 	private void setupLinks() {
-//		replacedPanel = new Dashboard("panel");
-//		replacedPanel.setOutputMarkupId(true);
+		replacedPanel = new Dashboard("panel");
+		replacedPanel.setOutputMarkupId(true);
 		// UserRole role = (UserRole) getSession().getAttribute("user_role");
 
-		//add(replacedPanel);
-		//add(new Label("login_id", user));
-//		add(new AjaxFallbackLink<MasterPage>("dashboard") {
-//			@Override
-//			public void onClick(AjaxRequestTarget target) {
-//				Panel newPanel = new Dashboard("panel");
-//				newPanel.setOutputMarkupId(true);
-//				replacedPanel.replaceWith(newPanel);
-//				if (target != null) {
-//					target.add(newPanel);
-//				}
-//				replacedPanel = newPanel;
-//			}
-//		});
+		add(replacedPanel);
+		add(new Label("login_id", user));
+		add(new AjaxFallbackLink<MasterPage>("dashboard") {
+			@Override
+			public void onClick(AjaxRequestTarget target) {
+				Panel newPanel = new Dashboard("panel");
+				newPanel.setOutputMarkupId(true);
+				replacedPanel.replaceWith(newPanel);
+				if (target != null) {
+					target.add(newPanel);
+				}
+				replacedPanel = newPanel;
+			}
+		});
+
+		add(new AjaxFallbackLink<MasterPage>("notification") {
+			@Override
+			public void onClick(AjaxRequestTarget target) {
+				Panel newPanel = new Notifications("panel", new Model<Notification>(new Notification()));
+				newPanel.setOutputMarkupId(true);
+				replacedPanel.replaceWith(newPanel);
+				if (target != null) {
+					target.add(newPanel);
+				}
+				replacedPanel = newPanel;
+			}
+		});
+
+		add(new AjaxFallbackLink<MasterPage>("sign_out") {
+			@Override
+			public void onClick(AjaxRequestTarget target) {
+				signOut();
+			}
+		});
 
 	}
 
